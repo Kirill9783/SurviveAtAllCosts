@@ -1,0 +1,69 @@
+.features {
+  position: relative;
+  min-height: 100vh;
+
+  &__wrapper {
+    padding: 50px 0 50px;
+
+    @media (max-width: 450px) {
+      padding: 30px 0;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  &__inner {
+    display: grid;
+    justify-content: end;
+    gap: 70px;
+    padding: 100px 0 0;
+    grid-template-columns: 400px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0 0 10px;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+
+    @media (max-width: 500px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
+  }
+
+
+}

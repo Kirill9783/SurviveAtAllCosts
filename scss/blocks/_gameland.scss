@@ -1,0 +1,61 @@
+.gameland {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+
+  @media (max-width: 1199px) {
+    justify-content: unset;
+  }
+
+
+
+
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: color $transition-300;
+    outline: none;
+    color: $color-my-sin;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white;
+    }
+  }
+
+  &-item {
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &--small {
+      display: none;
+      @media (max-width: 1199px) {
+        display: block;
+      }
+    }
+
+    &__link {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &--burger {
+      display: none;
+
+      @media (max-width: 1199px) {
+        display: flex;
+      }
+    }
+  }
+}

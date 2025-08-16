@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+    <script type="module" defer src="js/index.js"></script>
+    <title>Survive at all costs</title>
+    <meta name="description" content="Описание">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+                <svg class="header__icon" width="55" height="55" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+                </svg>
+            </a>
+            <div class="header__menu-inner">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">main</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">about</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">game features</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">System requirements</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__link" href="#">quotes</a>
+                    </li>
+                    <li class="header__menu-item header__menu-item--show">
+                        <ul class="header__gameland gameland gameland--small">
+                            <li class="gameland-item gameland-item--small">
+                                <a href="" class="gameland__link">
+                                    <svg class="gameland__icon" width="30" height="30" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-xbox"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="gameland-item gameland-item--small">
+                                <a href="" class="gameland__link">
+                                    <svg class="header__icon" width="30" height="30" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-steam"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="header__lang-box">
+                    <div class="header__lang-select">
+                        <a class="header__link" href="#">
+                            eng
+                            <svg class="header__icon-arrow" width="15" height="10" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="header__list-lang">
+                            <li class="header__item-lang">
+                                <a class="header__lang-link" href="#">rus</a>
+                            </li>
+                            <li class="header__item-lang">
+                                <a class="header__lang-link" href="#">fra</a>
+                            </li>
+                            <li class="header__item-lang">
+                                <a class="header__lang-link" href="#">deu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="header__gameland gameland">
+                    <li class="gameland-item">
+                        <a href="" class="gameland__link">
+                            <svg class="gameland__icon" width="30" height="30" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-xbox"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="gameland-item">
+                        <a href="" class="gameland__link">
+                            <svg class="header__icon" width="30" height="30" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-steam"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="gameland-item gameland-item--burger">
+                        <button class="gameland-item__link burger" type="button" aria-label="Открыть меню">
+                            <span class="burger__menu"></span>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__picture">
+                    <div class="hero__slider">
+                        <div class="hero__slide">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/hero/hero-img.webp 1x, images/hero/hero-img@2x.webp 2x">
+                                <img class="hero__img" src="images/hero/hero-img.jpg"
+                                     srcset="images/hero/hero-img@2x.jpg 2x" width="1440"
+                                     height="962"
+                                     alt="Изображение персонажей">
+                            </picture>
+                        </div>
+                        <div class="hero__slide">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/hero/hero-img2.webp 1x, images/hero/hero-img2@2x.webp 2x">
+                                <img class="hero__img" src="images/hero/hero-img2.jpg"
+                                     srcset="images/hero/hero-img2@2x.jpg 2x" width="1440"
+                                     height="1050"
+                                     alt="Изображение персонажей">
+                            </picture>
+                        </div>
+                        <div class="hero__slide">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/hero/hero-img3.webp 1x, images/hero/hero-img3@2x.webp 2x">
+                                <img class="hero__img" src="images/hero/hero-img3.jpg"
+                                     srcset="images/hero/hero-img3@2x.jpg 2x" width="1440"
+                                     height="872"
+                                     alt="Изображение персонажей">
+                            </picture>
+                        </div>
+                        <div class="hero__slide">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="images/hero/hero-img4.webp 1x, images/hero/hero-img4@2x.webp 2x">
+                                <img class="hero__img" src="images/hero/hero-img4.jpg"
+                                     srcset="images/hero/hero-img4@2x.jpg 2x" width="1440"
+                                     height="961"
+                                     alt="Изображение персонажей">
+                            </picture>
+                        </div>
+                    </div>
+
+                </div>
+                <h1 class="hero__title">SURVIVE AT&nbsp;ALL&nbsp;COSTS</h1>
+                <p class="hero__description">Experience new social battle royale game</p>
+                <a class="hero__link" href="#">Buy Now on Steam | $14.99</a>
+                <div class="hero__1">
+                    <a class="hero__story" href="#story" aria-label="Узнать историю">The story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sos">
+        <div class="container">
+            <div class="sos__wrapper" id="story">
+                <div class="sos__picture">
+                    <picture>
+                        <source type="image/webp" srcset="images/sos/sos-img.webp 1x, images/sos/sos-img@2x.webp 2x">
+                        <img class="sos__img" src="images/sos/sos-img.jpg" srcset="images/sos/sos-img@2x.jpg 2x"
+                             width="1440"
+                             height="962"
+                             alt="Изображение персонажей">
+                    </picture>
+                </div>
+                <div class="sos__inner">
+                    <div class="sos__left">
+                        <div class="sos__left-top">
+                            <span class="sos__subtitle">What is SOS?</span>
+                            <h2 class="sos__title">social battle royale game</h2>
+                        </div>
+                        <div class="sos__left-bottom">
+                            <p class="sos__description">
+                                Each round, you and 15&nbsp;other contestants compete to
+                                escape a&nbsp;deadly island filled with monsters. The trick&nbsp;is: three people can
+                                survive. Will you run
+                                solo or&nbsp;form friendships with others to&nbsp;escape?
+                            </p>
+                            <p class="sos__description">
+                                Making the right decisions could be&nbsp;the
+                                difference between life and death.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sos__right">
+                        <div class="sos__slider">
+                            <div class="sos__slides">
+                                <div class="sos__slide">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/sos/slide1.webp 1x, images/sos/slide1@2x.webp 2x">
+                                        <img class="sos__img" src="images/sos/slide1.jpg"
+                                             srcset="images/sos/slide1@2x.jpg 2x" width="503"
+                                             height="611"
+                                             alt="Изображение игры">
+                                    </picture>
+                                </div>
+                                <div class="sos__slide">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/sos/slide2.webp 1x, images/sos/slide2@2x.webp 2x">
+                                        <img class="sos__img" src="images/sos/slide2.jpg"
+                                             srcset="images/sos/slide2@2x.jpg 2x" width="503"
+                                             height="611"
+                                             alt="Изображение игры">
+                                    </picture>
+                                </div>
+                                <div class="sos__slide">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="images/sos/slide3.webp 1x, images/sos/slide3@2x.webp 2x">
+                                        <img class="sos__img" src="images/sos/slide3.jpg"
+                                             srcset="images/sos/slide3@2x.jpg 2x" width="503"
+                                             height="611"
+                                             alt="Изображение игры">
+                                    </picture>
+                                </div>
+                            </div>
+                            <button class="sos__prev">&#10094;</button>
+                            <button class="sos__next">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features__wrapper">
+                <div class="features__picture">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="images/features/features-img.webp 1x, images/features/features-img@2x.webp 2x">
+                        <img class="features__img" src="images/features/features-img.jpg"
+                             srcset="images/features/features-img@2x.jpg 2x"
+                             width="1440"
+                             height="961"
+                             alt="Изображение персонажей">
+                    </picture>
+                </div>
+                <div class="features__inner">
+                    <div class="features__top">
+                        <span class="features__subtitle">What’s so special?</span>
+                        <h2 class="features__title">features</h2>
+                    </div>
+                    <div class="features__accordion accordion">
+                        <div class="accordion__element">
+                            <button class="accordion__btn">
+                                <span class="accordion__btn-text">
+                                    CREATE ALLIES AND ENEMIES
+                                </span>
+                                <span class="accordion__btn-icon"></span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__inner">
+                                    <div class="accordion__text">
+                                        <p class="accordion__text-describe">
+                                            You have 30&nbsp;minutes to&nbsp;find a&nbsp;relic, signal for extraction, and grab
+                                            one of&nbsp;three spots on&nbsp;the rescue chopper.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__element">
+                            <button class="accordion__btn">
+                                <span class="accordion__btn-text">
+                                    SURVIVE AT ALL COSTS
+                                </span>
+                                <span class="accordion__btn-icon"></span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__inner">
+                                    <div class="accordion__text">
+                                        <p class="accordion__text-describe">
+                                            You have 30&nbsp;minutes to&nbsp;find a&nbsp;relic, signal for extraction, and grab
+                                            one of&nbsp;three spots on&nbsp;the rescue chopper.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__element">
+                            <button class="accordion__btn">
+                                <span class="accordion__btn-text">
+                                    IMPRESS THE AUDIENCE
+                                </span>
+                                <span class="accordion__btn-icon"></span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__inner">
+                                    <div class="accordion__text">
+                                        <p class="accordion__text-describe">
+                                            You have 30&nbsp;minutes to&nbsp;find a&nbsp;relic, signal for extraction, and grab
+                                            one of&nbsp;three spots on&nbsp;the rescue chopper.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
